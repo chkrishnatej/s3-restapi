@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "s3-uploader"
+version = "0.1.0"
+description = "Simple S3 uploading API"
+authors = ["chkrishnatej <chkrishnatej@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+fastapi = "^0.59.0"
+uvicorn = "^0.11.5"
+boto3 = "^1.14.21"
+typer = "^0.3.0"
+python-multipart = "^0.0.5"
+tortoise-orm = "^0.16.13"
+python-dotenv = "^0.14.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
